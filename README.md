@@ -55,7 +55,7 @@
 Прикрепление к проектам (
    - ID Прикрепления [INTEGER, PRIMARY KEY, UNIQUE INDEX]
    - ID Проекта [INTEGER]
- )
+)
 
 Структурные подразделения (
    - ID Структурного подразделения [INTEGER, PRIMARY KEY, UNIQUE INDEX]
