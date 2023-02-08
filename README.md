@@ -28,7 +28,9 @@
 Сотрудники (
    
    - ID сотрудника [INTEGER, PRIMARY KEY, UNIQUR INDEX]
-   - ФИО Сотрудника [NVARCHAR(255)]
+   - Фамилия Сотрудника [NVARCHAR(255)]
+   - Имя Сотрудника [NVARCHAR(255)]
+   - Отчество Сотрудника [NVARCHAR(255)]
    - ID Должности [INTEGER]
    - Дата найма [DATE]
    - ID Филиала [INTEGER]
@@ -46,9 +48,14 @@
 )
 
 Проекты (
-   - ID проекта [INTEGER, PRIMARY KEY, UNIQUE INDEX]
+   - ID Проекта [INTEGER, PRIMARY KEY, UNIQUE INDEX]
    - Название проекта [NVARCHAR(255)]
 )
+
+Прикрепление к проектам (
+   - ID Прикрепления [INTEGER, PRIMARY KEY, UNIQUE INDEX]
+   - ID Проекта [INTEGER]
+ )
 
 Структурные подразделения (
    - ID Структурного подразделения [INTEGER, PRIMARY KEY, UNIQUE INDEX]
